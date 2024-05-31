@@ -1,6 +1,7 @@
 import sqlite3
 import pandas as pd
 import pathlib
+import logging
 
 # Define the database file in the current root project directory
 db_file = pathlib.Path("project.db")
@@ -53,3 +54,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    logging.info("Program started") 
+    main()
+    logging.info("Program ended")  
